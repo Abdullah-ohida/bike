@@ -1,0 +1,222 @@
+
+  /* Slider Nav-bar */
+
+  .sidebar-header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 1.5rem;
+  
+}
+
+.close-btn{
+    font-size: 1.75rem;
+    background-color: transparent;
+    color: rgba(197, 9, 9, 0.7);
+    transition: all 0.5s linear;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    position: fixed;
+    margin-top: 1rem;
+}
+
+.close-btn:hover{
+    color:  rgba(197, 9, 9);
+    transform: scale(1.1);
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    box-shadow: rgba(197, 9, 9, 0.7);
+    transition: all 0.5s linear;
+    overflow-y: scroll;
+    transform: translate(-100%);
+}
+
+.show-sidebar{
+    transform: translate(0);
+}
+    /* End Slider Nav-bar */
+
+    .cart-center{
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .cart-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+    }
+
+    .underline{
+        width: 100%;
+        border-bottom: 3px solid rgb(240, 238, 238);
+    }
+
+    .cart-header h2{
+        font-size: 2.5rem;
+        text-transform: capitalize;
+        font-weight: lighter;
+    }
+
+    .cart-header p{
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+
+    .cart-array{
+        min-height: 45vh;
+    }
+
+
+    .item-array{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5rem 0rem 0;
+    }
+
+    .about-item{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .about-item>*{
+        margin-right: 2rem;
+    }
+
+    .about h4{
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        font-weight: lighter;
+    }
+
+    .about p{
+        font-size: 1rem;
+        word-spacing: 0.20rem;
+        color: rgb(119, 116, 116);
+        text-transform: capitalize;
+    }
+
+    .about-item .bike-1{
+        max-width: 100%;
+        width: 300px;
+    }
+
+    .add-more{
+        margin: 0 5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .add-more>*{
+        margin: 0 1rem;
+        cursor: pointer;
+    }
+
+    .item-add{
+        border: 2px solid black;
+        padding: 0.3rem 0.8rem;
+    }
+
+    .item-add p{
+        font-size: 1rem;
+    }
+
+    .price{
+        /* margin:  0 5rem; */
+        width: 250px;
+    }
+
+    .price p{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .delete-item{
+        cursor: pointer;
+        margin-left: 1rem;
+    }
+
+    .close{
+        width: 18px;
+    }
+
+    .cart-survey{
+        width: 100%;
+        background-color: rgb(214, 209, 209, 0.5);
+        min-height: 30vh;
+        padding: 1.5rem 1rem; 
+        margin-top: 1rem;    
+    }
+
+    .cart-survey p, .shopping{
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .cart-survey p{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        color: rgb(73, 70, 70);
+    }
+
+    .shopping{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 3.5rem;
+       
+    }
+
+    .con, .pro{
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .con{
+        font-size: 1.1rem;
+        text-transform: capitalize;
+        padding: 0.2rem 1rem;
+    }
+
+    .pro{
+        background-color: rgb(32, 32, 37);
+        padding: 0.2rem 1rem;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: lighter;
+        text-transform: capitalize;
+        border-radius: 3px;
+        outline: none;
+    }
+
+    .pro:hover{
+        background-color: black;
+    }
+
+    .arrow{
+        max-width: 100%;
+        width: 80px;
+    }
+
+ 
+
+   

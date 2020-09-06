@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- end google font -->
+    <!-- ==== Custom Css ==== -->
+    <link rel="stylesheet" href="/my-bicycle/asset/css/style.css">
+    <link rel="stylesheet" href="/my-bicycle/asset/css/cart.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+    <!-- ==== End Custom Css ==== -->
+    <!-- == Fontaesome == -->
+    <script src="https://kit.fontawesome.com/e2052a1ca7.js" crossorigin="anonymous"></script>
+    <!-- == End Fontaesome == -->
+    <title>Bicycle-App</title>
+</head>
+
+<body>
+    <!-- === nav-bar === -->
+    <nav class="nav">
+        <!-- == nav-center== -->
+        <div class="nav-center">
+            <!-- == nav-header == -->
+            <div class="nav-header">
+                <header>
+                    <h2 class="logo">AvidBikers</h2>
+                </header>
+                <button class="nav-toggle">
+                    <div class="cart">
+                        <img src="/asset/imgs/shopping-cart.svg" alt="cart" class="cart">
+                        <p>0</p>
+                    </div>
+                    <div class="toggle">
+                        <span class="bar">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                        <span class="times">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </div>
+                </button>
+            </div>
+            <!-- == Links Container == -->
+            <div class="content">
+                <div class="links-container">
+                    <!-- === links === -->
+                    <ul class="links">
+                        <li>
+                            <a href="#home" class="scroll-link active">home</a>
+                        </li>
+                        <li>
+                            <a href="#filter" class="scroll-link load-btn" data-id="Preload">new</a>
+                        </li>
+                        <li>
+                            <a href="#filter" class="scroll-link  load-btn" data-id="old">used</a>
+                        </li>
+                        <li>
+                            <a href="#sell" class="scroll-link">sell your bicycle</a>
+                        </li>
+                        <li>
+                            <a href="#how" class="scroll-link last">how it works</a>
+                        </li>
+                    </ul>
+                    <span class="target"></span>
+                    <div class="register">
+                        <button class="btn-reg trans">login</button>
+                        <button class="btn-reg full">register</button>
+                    </div>
+                        <button class="cart-icon cart-none cart-slider">
+                            <img src="/my-bicycle/asset/imgs/shopping-cart.svg" alt="cart" class="cart">
+                            <p class="count">0</p>
+                        </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="home" id="home">
+        <!-- Slideer Nav-bar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <button class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-container">
+                <div class="cart-center">
+                    <div class="cart-header">
+                        <h2>my cart</h2>
+                        <p><span class="cart-value"></span> items</p>
+                    </div>
+                    <div class="cart-array">
+
+                    </div>
+                </div>
+                <div class="cart-survey">
+                    <p class="total-price">
+                        subtotal: 
+                    </p>
+                    <div class="shopping">
+                        <button class="con">
+                            <img src="/my-bicycle/asset/imgs/arrow-2.png" alt="arrow" class="arrow">
+                            continue shopping
+                        </button>
+                        <button class="pro">
+                            proceed to checkout
+                            <img src="/my-bicycle/asset/imgs/arrow-1.png" alt="arrow" class="arrow">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!--========= Seach bicycle====== -->
+        <div class="slider-content">
+            <div class="slider">
+                <p>slider</p>
+                <img src="/my-bicycle/asset/imgs/image.png" alt="">
+                <p class="counter">1/10</p>
+            </div>
+        </div>
+        <div class="search-content">
+            <article>
+                <h1>Search for Bicycle</h1>
+                <p>Find an eco-friendly bicycle and save the planet while improving your fitness and health.</p>
+                <div class="search-container">
+                    <div class="small">
+                        <button class="btn-bike">make</button><img src="/my-bicycle/asset/imgs/image.png" alt=""
+                            class="line">
+                        <button class="btn-bike">model </button><img src="/my-bicycle/asset/imgs/image.png" alt=""
+                            class="line">
+                        <button class="btn-bike">status</button>
+                    </div>
+                    <button class="search-btn">search</button>
+                </div>
+            </article>
+            <div class="bike-image cycle-slideshow">
+            <div class="cycle-caption"></div>
+                <img src="/my-bicycle/asset/imgs/vi.jpg" alt="bike-image" class="slick">
+               <img src="/my-bicycle/asset/imgs/cart-1.jfif" alt="" class="slick">
+               <img src="/my-bicycle/asset/imgs/bike-1.jpg" alt="" class="slick">
+               <img src="/my-bicycle/asset/imgs/cart-3.jfif" alt="" class="slick">
+               <img src="/my-bicycle/asset/imgs/cart-5.jfif" alt="" class="slick">
+            </div>
+        </div>
+        <!--========= Seach bicycle End ====== -->
+        <a class="scroll-link top-link" href="#home">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+        <!-- End Slideer Nav-bar -->
+    </section>
+
+    <section class="upload" id="filter">
+        <h2 class="title">Lastest bicycle offers</h2>
+        <!-- filter buttons -->
+        <div class="upload-btn">
+            <button type="button" class="load-btn" data-id="all">all</button>
+            <button type="button" class="load-btn" data-id="Preload">preloved</button>
+            <button type="button" class="load-btn" data-id="old">old bike</button>
+        </div>
+        <!-- ======== OverLay ======== -->
+        <div class="modal-overlay">
+            <div class="modal">
+                <button class="cancel">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button class="prev">
+                    <i class="fas fa-caret-left"></i>
+                </button>
+                <img src="/my-bicycle/asset/imgs/vi.jpg" alt="bike-image" class="img-store">
+                <button class="next">
+                    <i class="fas fa-caret-right"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Cart item -->
+        <div class="cart-wrapper">
+            <!-- single Items -->
+
+        </div>
+        <!-- Cart item -->
+    </section>
+    <section id="work">
+        <img src="/my-bicycle/asset/imgs/cart-1.jfif" alt="bike">
+        <div class="about-bike">
+            <h2>why bicycles?</h2>
+            <ul class="list">
+                <li>
+                    <i class="fas fa-arrow-right"></i>
+                    Its a form of exercise
+                </li>
+
+                <li>
+                    <i class="fas fa-arrow-right"></i>
+                    It aid digestion
+                </li>
+                <li>
+                    <i class="fas fa-arrow-right"></i>
+                    It saves space and the planet with zero emission
+                </li>
+                <li>
+                    <i class="fas fa-arrow-right"></i>
+                    It increase brain power
+                </li>
+                <li>
+                    <i class="fas fa-arrow-right"></i>
+                    It reduces illness
+                </li>
+                <li>
+                    <i class="fas fa-arrow-right"></i>
+                    It increases body physique
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Testimonila section -->
+    <section id="testimonial">
+        <h3 class="title">Testimony from customers</h3>
+        <div class="slide-container">
+            <div class="slide-flex">
+                <button class="slide-btn slide-prev">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <div class="test-content">
+                    <img src="" alt="bike" class="reviewer-img">
+                    <header>
+                        <p class="review"></p>
+                        <p class="reviewer"></p>
+                    </header>
+                </div>
+                <button class="slide-btn slide-right">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-fit">
+            <div class="footer-section">
+                <div class="section-item">
+                    <h2 class="logo">AvidBikers</h2>
+                    <p class="about-us">
+                        Avidbikers offers all kinds of bicycles brands in one store. You can also through a list of both
+                        old
+                        and new bicycles.
+                    </p>
+                </div>
+                <div class="flex">
+                    <div class="item">
+                        <h3>navigation</h3>
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">categories</a></li>
+                            <li><a href="#">brands</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h3>links</h3>
+                        <ul>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">rules</a></li>
+                            <li><a href="#">help</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h3>account</h3>
+                        <ul>
+                            <li><a href="#">favourite <span>(0)</span></a></li>
+                            <li><a href="#">cart <span>(0)</span></a></li>
+                            <li><a href="#">my account</a></li>
+                            <li><a href="#">log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <ul class="social-media">
+                <div>
+                    <li><a href="#" class="term">privacy & terms</a></li>
+                    <li><a href="#"><img src="/my-bicycle/asset/imgs/twitter.svg" alt=""></a></li>
+                    <li><a href="#"><img src="/my-bicycle/asset/imgs/facebook.svg" alt=""></a></li>
+                </div>
+               <p class="owner">made by codetech</p>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+    <!-- javascript -->
+    <script src="/my-bicycle/asset/js/main.js"></script>
+    <!-- <script src="/"></script> -->
+</body>
+
+</html>
